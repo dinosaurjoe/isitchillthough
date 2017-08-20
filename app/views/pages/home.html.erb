@@ -1,0 +1,10 @@
+<div>
+  <img src="<%= @image %>" alt="image load error" style="width:304px;height:228px;">
+
+  <h2>
+    <%= @name %>
+  </h2>
+      <td><%= pluralize(@thing.votes.count, "chill point") %></td>
+      <td><%= button_to 'yes', upvote_thing_path(@thing), method: :post %></td>
+      <td><%= button_to 'no', downvote_thing_path(@thing), method: :post %></td>
+</div>
