@@ -1,3 +1,3 @@
-class Thing < ActiveRecord::Base
-    acts_as_votable
+class Thing < ApplicationRecord
+    has_many :votes, dependent: :destroy
 end
