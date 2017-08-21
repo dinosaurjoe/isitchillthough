@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Isitchillthough</title>
+    <title>Is it chill tho?</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="site-specific.css">
+    <style> body {
+      background-color: #DFE2DB;
+      }
+      </style>
   </head>
 
   <body>
-  <h1>is it chill tho?</h1>
+    <div id="header" class="jumbotron text-center">
+      <h1>is it chill tho?</h1>
+      <div id="footer"></div>
+    </div>
     <%= yield %>
   </body>
 </html>
