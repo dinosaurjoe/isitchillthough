@@ -1,0 +1,14 @@
+#header {
+  background-color: #191919;
+  color: white;
+  border-width: 5px;
+  border-color: #FFF056;
+}
+
+#footer {
+  background-color: #191919;
+  height: 30px;
+  width: 100%;
+  position:absolute;
+  bottom:0;
+}

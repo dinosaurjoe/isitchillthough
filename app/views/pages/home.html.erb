@@ -1,10 +1,28 @@
-<div>
-  <img src="<%= @image %>" alt="image load error" style="width:304px;height:228px;">
-
-  <h2>
-    <%= @name %>
-  </h2>
-      <td><%= pluralize(@thing.votes.count, "chill point") %></td>
-      <td><%= button_to 'yes', upvote_thing_path(@thing), method: :post %></td>
-      <td><%= button_to 'no', downvote_thing_path(@thing), method: :post %></td>
+<div id="cheese" class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <h2>
+        <%= @name.capitalize %>
+      </h2>
+     </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <img src="<%= @image %>" alt="image load error" style="width:304px;height:228px;">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-xs-4 text-center">
+      <h3><%= pluralize(@thing.votes.count, "chill points") %></h3>
+    </div>
+    <div class="col-xs-4 text-center">
+      <button class="btn btn-success"><%= link_to "Yes", upvote_thing_path(@thing), method: :post %></button>
+    </div>
+    <div class="col-xs-4 text-center">
+      <button class="btn btn-danger"><%= link_to "No", downvote_thing_path(@thing), method: :post %></button>
+    </div>
+  </div>
 </div>
