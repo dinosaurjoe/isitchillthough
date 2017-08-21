@@ -7,7 +7,12 @@ class ThingsController < ApplicationController
 
   def downvote
     @thing = Thing.find(params[:id])
-    @thing.votes.first.destroy
-    redirect_to root_path
+    x = @thing.votes.count
+    if x > 0
+      @thing.votes.first.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
+    end
   end
 end
