@@ -5,18 +5,64 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Thing.destroy_all
 
 Thing.create(
-  name: "hotdog",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Hot_dog_with_mustard.png/1200px-Hot_dog_with_mustard.png",
+  name: "Youtube.com",
+  image: "youtube.jpg",
   )
 
 Thing.create(
-  name: "cheese",
-  image: "https://62e528761d0685343e1c-f3d1b99a743ffa4142d9d7f1978d9686.ssl.cf2.rackcdn.com/files/145007/width754/image-20161108-29136-1hut6qb.jpg",
+  name: "Ogre",
+  image: "ogre.jpg",
   )
 
 Thing.create(
-  name: "air conditioner",
-  image: "http://www.lg.com/us/images/air-conditioners/md05601775/gallery/medium01.jpg",
+  name: "Existential Dread",
+  image: "existentialdread.jpg",
+  )
+
+Thing.create(
+  name: "2 Percent Milk",
+  image: "milk.jpg",
+  )
+
+Thing.create(
+  name: "My Neighbor Rick",
+  image: "myneighborrick.jpg",
+  )
+
+Thing.create(
+  name: "Cheese",
+  image: "cheese.jpg",
+  )
+
+Thing.create(
+  name: "Carrots",
+  image: "peaches.jpg",
+  )
+
+Thing.create(
+  name: "Baby Yoga",
+  image: "babiesdoingyoga.jpg",
+  )
+
+Thing.create(
+  name: "Air Conditioning",
+  image: "acunit.jpg",
+  )
+
+Thing.create(
+  name: "Shame",
+  image: "shame.jpg",
+  )
+
+Thing.create(
+  name: "My Son",
+  image: "myson.jpg",
+  )
+
+Thing.create(
+  name: "Friends and Family",
+  image: "orangutan.jpg",
   )
